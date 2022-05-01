@@ -96,7 +96,7 @@ nav ul li {
     font-weight: 700;
     animation: 1s blink step-end infinite;
     position: relative;
-    bottom: 5px;
+    bottom: 3px;
 }
 
 .wb-body {

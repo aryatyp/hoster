@@ -44,7 +44,7 @@ a {
     text-decoration: none;
 }
 
-p { 
+p {
     margin: 20px
 }
 
@@ -64,13 +64,14 @@ nav ul li {
 
 .container {
     max-width: 600px;
-    margin:auto;
+    margin: auto;
     display: flex;
     height: 70vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: textShadow 10s infinite;
+    animation: textShadow 5s;
+
 
 }
 
@@ -85,11 +86,21 @@ nav ul li {
     background: rgba(18, 16, 16, 0.1);
     opacity: 0;
     pointer-events: none;
-  }
+}
+
+.docs {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .hidden {
     display: none;
-    position:absolute;
+    position: absolute;
 }
 
 .cursor {
@@ -105,18 +116,24 @@ nav ul li {
 
 
 @keyframes blink {
-    from, to {
+
+    from,
+    to {
         color: transparent;
     }
+
     50% {
         color: var(--text-color);
     }
 }
 
 @keyframes rblink {
-    from, to {
+
+    from,
+    to {
         color: transparent;
     }
+
     50% {
         color: var(--text-color);
     }
@@ -124,10 +141,10 @@ nav ul li {
 
 @keyframes textShadow {
     0% {
-      text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+        text-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5), -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
     }
+
     5% {
-      text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+        text-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5), -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
     }
-  }
-  
+}
